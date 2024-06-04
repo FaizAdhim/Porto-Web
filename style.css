@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #F5F5F5;
-    background-color: #070610;
+    color: white;
 }
 
 .header {
@@ -12,20 +11,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1px 10%;
+    padding: 1px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    background-color: #070610;
+    background-color: #0f0e20;
 }
 
 .logo a {
-    font-size: 71px;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
+    font-size: 53px;
     font-family: fantasy;
+    text-decoration: none;
 }
 
 .navbar a {
@@ -35,11 +31,74 @@
     font-weight: 400;
     margin-left: 40px;
     transition: .2s;
+    background: #0f0e20;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #FFC61D;
+    color: #FFCC21;
 }
 
-.
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background-image: url('HEAD.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 500px;
+    background-position-x: 800px;
+    background-position-y: 105px;
+    background-color: #0A0815;
+    
+}
+
+.hero-content {
+    max-width: 55%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content h3 {
+    font-size: 30px;
+    color: #57579f;
+}
+
+#about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #0A0815;
+}
+
+#project {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #0A0815;
+}
+
+#contact {
+    height: 100vh;
+    background-image: url('CONTACT.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 65px;
+    background-color: #0A0815;
+    background-blend-mode: lighten;
+    background: linear-gradient(180deg, #0A0815 10%, background-image 60%);
+}
+
+.contact-content {
+    display: flex;
+    padding: 100px 30%;
+}
+
+.contact-content h1 {
+    font-size: 100px;
+}
