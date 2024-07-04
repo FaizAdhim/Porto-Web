@@ -1,153 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0f0e20;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.logo a {
-    font-size: 53px;
-    font-family: fantasy;
-    text-decoration: none;
-}
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="LGWHITE.png" style="width: 30px;">  JAL</a>
+        </div>
+        <nav class="navbar" style="background-color: #0f0e20;">
+            <a href="#hero" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-.navbar a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    margin-left: 40px;
-    transition: .2s;
-    background: #0f0e20;
-}
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello! I'm Faizal AN</h1>
+            <h3>Self-Claimed Artist</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat 
+                commodi pariatur reprehenderit iste ad eaque aperiam, nisi incidunt 
+                natus, maiores consequuntur in? Culpa fuga nihil non labore 
+                exercitationem. Voluptate, assumenda!</p>
+            <div class="button">
+                <a href="#">My Gallery</a>
+                <a href="#">Hire Me</a>
+            </div>
+        </div>
+    </section>
 
-.navbar a:hover,
-.navbar a.active {
-    color: #FFCC21;
-}
+    <section id="about">
+        <div class="about-profil">
+            <img src="ABOUT.jpg" alt="mypict" style="width: 90%;">
+        </div>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas 
+                nostrum aliquid ab est recusandae, unde natus tempore error delectus, 
+                facilis non? Magni vel excepturi aspernatur voluptate neque nobis 
+                veniam inventore?</p>
+        </div>
+    </section>
 
-#hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
-    background-image: url('HEAD.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 500px;
-    background-position-x: 800px;
-    background-position-y: 105px;
-    background-color: #0A0815;
-    
-}
+    <section id="skills">
+        <div class="skills-content">
+            <h1>Skills</h1>
+            <h1>Software I Use</h1>
+            <div class="software">
+                <a href="https://medibangpaint.com/" target="_blank"><img src="MEDIBANG.png" alt="Medibang" height="75px">
+                </a>
+                <a href="https://www.adobe.com/products/illustrator.html" target="_blank"><img src="AI.png" alt="Adobe Illustrator" height="75px">
+                </a>
+                <a href="https://www.capcut.com/" target="_blank"><img src="CAPCUT.png" alt="Capcut" height="75px">
+                </a>               
+                <a href="https://www.adobe.com/products/premiere.html" target="_blank"><img src="PR.png" alt="Adobe Premiere" height="75px">
+                </a>
+                <a href="https://www.canva.com/" target="_blank"><img src="CANVA.png" alt="Canva" height="75px">
+                </a>
+             </div>
+        </div>
+    </section>
 
-.hero-content {
-    max-width: 55%;
-}
-
-.hero-content h1 {
-    font-size: 50px;
-}
-
-.hero-content h3 {
-    font-size: 30px;
-    color: #57579f;
-}
-
-.hero-content p {
-    font: 16px;
-    margin: 10px 0 20px;
-}
-
-.hero-content .button {
-    display: flex;
-    justify-content: space-between;
-    width: 325px;
-    height: 50px;
-    padding: 0 0 0 1%;
-}
-
-.button a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #57579f;
-    border: 2px solid #57579f;
-    border-radius: 7px;
-    font-size: 19px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-#about {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-    background-color: #0A0815;
-    justify-content: space-between;
-}
-
-#skills {
-    height: 100vh;
-    background-color: #0A0815;
-}
-
-.skills-content .software {
-    padding-left: 31%;
-    justify-items: center;
-    display: flex;
-}
-
-.software img {
-    transition: .2s;
-    filter: grayscale(85%);
-}
-
-.software img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05);
-}
-
-.skills-content h1 {
-    padding-top: 8%;
-    padding-bottom: 2%;
-    text-align: center;
-}
-
-#contact {
-    height: 100vh;
-    background-image: url('CONTACT.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 65px;
-    background-color: #0A0815;
-    background-blend-mode: lighten;
-    background: linear-gradient(180deg, #0A0815 10%, background-image 60%);
-}
-
-.contact-content {
-    display: flex;
-    padding: 100px 30%;
-}
-
-.contact-content h1 {
-    font-size: 100px;
-}
+    <section id="contact">
+        <div class="contact-content">
+            <h1>CONTACT</h1>
+    </section>
+</body>
+</html>
