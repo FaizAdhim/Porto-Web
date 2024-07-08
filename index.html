@@ -18,6 +18,7 @@
             <a href="#hero" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -53,7 +54,25 @@
     <section id="skills">
         <div class="skills-content">
             <h1>Skills</h1>
-            <h1>Software I Use</h1>
+            <div class="skills">
+                <img src="ILLUSTRATION.png" alt="Illustrate" height="275px">
+                <div class="name1">
+                    <div class="text">Illustrate</div>
+                </div>
+                <img src="VIDEOEDITING.png" alt="Video Editing" height="275px">
+                <div class="name2">
+                    <div class="text">Video Editing</div>
+                </div>
+                <img src="GRAPHICDESIGN.png" alt="Graphic Design" height="275px">
+                <div class="name3">
+                    <div class="text">Graphic Design</div>
+                </div>
+                <img src="PROGRAM.png" alt="Programming" height="275px">
+                <div class="name4">
+                    <div class="text">Programming</div>
+                </div>
+            </div>
+            <h2>Software I Use</h2>
             <div class="software">
                 <a href="https://medibangpaint.com/" target="_blank"><img src="MEDIBANG.png" alt="Medibang" height="75px">
                 </a>
@@ -67,6 +86,17 @@
                 </a>
              </div>
         </div>
+    </section>
+
+    <section id="project">
+        <div class="project-content">
+            <h1>Project</h1>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('illustration')"> Illustration</button>
+                <button class="btn" onclick="filterSelection('video')"> Video Editing</button>
+                <button class="btn" onclick="filterSelection('programming')"> Programming</button>
+            </div>
     </section>
 
     <section id="contact">
