@@ -17,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #0f0e20;
+    z-index: 1000;
 }
 
 .logo a {
@@ -32,7 +33,7 @@
     font-weight: 400;
     margin-left: 40px;
     transition: .2s;
-    background: #0f0e20;
+    background: #0f0e20;;
 }
 
 .navbar a:hover,
@@ -108,6 +109,8 @@
 #skills {
     height: 100vh;
     background-color: #0A0815;
+    position: relative;
+    z-index: 1;
 }
 
 .skills-content .software {
@@ -118,167 +121,82 @@
 
 .software img {
     transition: .2s;
+    opacity: 70%;
     filter: grayscale(85%);
 }
 
 .software img:hover {
+    opacity: 100%;
     filter: grayscale(0%);
     transform: scale(1.05);
 }
 
 .skills-content h1 {
-    padding-top: 8%;
-    padding-bottom: 2%;
+    padding-top: 6%;
+    padding-bottom: 1%;
     text-align: center;
 }
 
-#contact {
-    height: 100vh;
-    background-image: url('CONTACT.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 65px;
-    background-color: #0A0815;
-    background-blend-mode: lighten;
-    background: linear-gradient(180deg, #0A0815 10%, background-image 60%);
-}
-
-.contact-content {
-    display: flex;
-    padding: 100px 30%;
-}
-
-.contact-content h1 {
-    font-size: 100px;
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1px 8%;
-    display: flex;
+.skills-content .skills {
+    padding-left: 20%;
+    padding-right: 20%;
     justify-content: space-between;
-    align-items: center;
-    background-color: #0f0e20;
-}
-
-.logo a {
-    font-size: 53px;
-    font-family: fantasy;
-    text-decoration: none;
-}
-
-.navbar a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    margin-left: 40px;
-    transition: .2s;
-    background: #0f0e20;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #FFCC21;
-}
-
-#hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
-    background-image: url('HEAD.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 500px;
-    background-position-x: 800px;
-    background-position-y: 105px;
-    background-color: #0A0815;
-    
-}
-
-.hero-content {
-    max-width: 55%;
-}
-
-.hero-content h1 {
-    font-size: 50px;
-}
-
-.hero-content h3 {
-    font-size: 30px;
-    color: #57579f;
-}
-
-.hero-content p {
-    font: 16px;
-    margin: 10px 0 20px;
-}
-
-.hero-content .button {
-    display: flex;
-    justify-content: space-between;
-    width: 325px;
-    height: 50px;
-    padding: 0 0 0 1%;
-}
-
-.button a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #57579f;
-    border: 2px solid #57579f;
-    border-radius: 7px;
-    font-size: 19px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-#about {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-    background-color: #0A0815;
-    justify-content: space-between;
-}
-
-#skills {
-    height: 100vh;
-    background-color: #0A0815;
-}
-
-.skills-content .software {
-    padding-left: 31%;
     justify-items: center;
     display: flex;
 }
 
-.software img {
+.skills img {
+    display: block;
     transition: .2s;
     filter: grayscale(85%);
 }
 
-.software img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05);
+.skills .text {
+    text-shadow: #0A0815;
+    padding: 1px 7px;
 }
 
-.skills-content h1 {
+.skills .name1 {
+    position: absolute;
+    top: 59%;
+    left: 23.7%;
+}
+
+.skills .name2 {
+    position: absolute;
+    top: 59%;
+    left: 38%;
+}
+
+.skills .name3 {
+    position: absolute;
+    top: 59%;
+    left: 52.6%;
+}
+
+.skills .name4 {
+    position: absolute;
+    top: 59%;
+    left: 68.68%;
+}
+
+.skills img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.07);
+}
+
+.skills-content h2 {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#project {
+    height: 100vh;
+    background-color: #0A0815;
+}
+
+.project-content h1 {
     padding-top: 8%;
     padding-bottom: 2%;
     text-align: center;
