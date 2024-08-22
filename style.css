@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0e20;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 53px;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 40px;
+    transition: .2s;
+    background: #0f0e20;;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #FFCC21;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background-image: url('HEAD.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 500px;
+    background-position-x: 800px;
+    background-position-y: 105px;
+    background-color: #0A0815;
+    
+}
+
+.hero-content {
+    max-width: 55%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content h3 {
+    font-size: 30px;
+    color: #57579f;
+}
+
+.hero-content p {
+    font: 16px;
+    margin: 10px 0 20px;
+}
+
+.hero-content .button {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    height: 50px;
+    padding: 0 0 0 1%;
+}
+
+.button a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #57579f;
+    border: 2px solid #57579f;
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#about {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #0A0815;
+    justify-content: space-between;
+}
+
+#skills {
+    height: 100vh;
+    background-color: #0A0815;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-content .software {
+    padding-left: 31%;
+    justify-items: center;
+    display: flex;
+}
+
+.software img {
+    transition: .2s;
+    opacity: 70%;
+    filter: grayscale(85%);
+}
+
+.software img:hover {
+    opacity: 100%;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.skills-content h1 {
+    padding-top: 8%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.skills-content .skills {
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: space-between;
+    justify-items: center;
+    display: flex;
+}
+
+.skills img {
+    display: block;
+    transition: .2s;
+    filter: grayscale(85%);
+}
+
+.skills .text {
+    text-shadow: #0A0815;
+    padding: 1px 7px;
+}
+
+.skills .name1 {
+    position: absolute;
+    top: 54%;
+    left: 23.7%;
+}
+
+.skills .name2 {
+    position: absolute;
+    top: 54%;
+    left: 38%;
+}
+
+.skills .name3 {
+    position: absolute;
+    top: 54%;
+    left: 52.6%;
+}
+
+.skills .name4 {
+    position: absolute;
+    top: 54%;
+    left: 68.68%;
+}
+
+.skills img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.07);
+}
+
+.skills-content h2 {
+    padding-top: 4%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#project {
+    height: 95vh;
+    background-color: #0A0815;
+}
+
+.project-content h1 {
+    padding-top: 8%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.row {
+    margin: 8px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 340px;
+}
+
+/* Scrollbar untuk browser Webkit (Chrome, Safari, Edge) */
+.row::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+}
+  
+.row::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna transparan untuk scrollbar */
+    border-radius: 4px;
+}
+  
+.row::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Warna transparan untuk scrollbar saat hover */
+  }
+  
+  /* Scrollbar untuk Firefox */
+.row {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* Warna scrollbar dan track */
+}
+
+.row, .row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.show {
+    display: block;
+}
+
+
+.btn-container {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding-left: 32.8%;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #57579f ;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-container button.active {
+    background-color: #0f0e20;
+    border: solid 1.5px #57579f;
+    box-shadow: 0 0 10px #57579f;
+}
+
+.btn-container button:hover {
+    box-shadow: 0 0 10px #57579f;
+}
+
+#contact {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #0a0815 10%, rgba(255, 255, 255, 0)), 
+    url('CONTACT.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 65px;
+    background-color: #0A0815;
+}
+
+.contact-content {
+    display: block;
+    padding: 80px 30%;
+}
+
+.contact-content h1 {
+    font-size: 100px;
+}
+
+.contact-buttons {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.35); /* Transparansi */
+    backdrop-filter: blur(1px); /* Efek blur seperti kaca */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-btn {
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px); /* Efek kaca */
+  background: rgba(255, 255, 255, 0.2); /* Transparansi kaca */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 400px; /* Lebar tetap agar seragam */
+  text-align: center;
+}
+
+.contact-btn img {
+    width: 20%;
+    padding: 5px;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp {
+  background: rgba(37, 211, 102, 0.3); /* Hijau khas WhatsApp dengan efek kaca */
+}
+
+.instagram {
+  background: rgba(225, 48, 107, 0.3); /* Merah muda khas Instagram dengan efek kaca */
+}
+
+.email {
+  background: rgba(0, 102, 204, 0.3); /* Biru khas email dengan efek kaca */
+}
